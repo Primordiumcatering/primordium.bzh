@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accueil - Primordium Catering</title>
   <link rel="icon" type="image/png" href="logo rond signature vecto rectifié.png">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
@@ -18,22 +19,33 @@
     header {
       background-color: #1D372F;
       color: white;
-      padding: 2rem;
-      text-align: center;
+      padding: 1rem;
+      text-align: left;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.5rem;
-      margin: 0;
-      color: #C8A14F;
+    header img {
+      height: 150px;
+      margin-left: 1rem;
     }
-    header p {
+    .header-right {
+      text-align: right;
+      margin-right: 1rem;
+    }
+    .header-right p {
       font-style: italic;
-      font-size: 1.2rem;
+      font-size: 1rem;
       color: #C8A14F;
+      margin: 0.2rem 0 0 0;
     }
     nav {
-      margin-top: 1rem;
+      margin-top: 0.3rem;
     }
     nav a {
       color: #C8A14F;
@@ -49,11 +61,13 @@
       max-width: 800px;
       margin: 0 auto;
       line-height: 1.7;
+      margin-top: 140px;
       text-align: center;
     }
     h2, h3 {
       font-family: 'Playfair Display', serif;
-      font-size: 2rem;
+      font-size: 1.8rem;
+      color: #1D372F;
       margin-bottom: 1rem;
     }
     .launch {
@@ -76,21 +90,24 @@
 </head>
 <body>
   <header>
-    <img src="logo_rectifie.svg" alt="Logo Primordium" style="height: 240px; margin-bottom: 1rem;">
-    <h1>Primordium Catering</h1>
-    <p>Du goût, du sens</p>
-    <nav>
-      <a href="index.html">Accueil</a> |
-      <a href="le-projet.html">Le Projet</a> |
-      <a href="offre-services.html">Offre & Services</a> |
-      <a href="engagements.html">Engagements</a> |
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div style="display: flex; align-items: center;">
+      <img src="logo_rectifie.svg" alt="Logo Primordium">
+      <p style="font-style: italic; font-size: 1rem; color: #C8A14F; margin-left: 1rem;">Du goût, du sens.</p>
+    </div>
+    <div class="header-right">
+      <nav>
+        <a href="index.html">Accueil</a> |
+        <a href="le-projet.html">Le Projet</a> |
+        <a href="offre-services.html">Offre & Services</a> |
+        <a href="engagements.html">Engagements</a> |
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
   <main>
     <h2>Site en construction</h2>
     <p>
-      Primordium, c’est une cuisine mobile pensée pour les tournages.<br>
+      <span class="highlight">Primordium</span>, c’est une cuisine mobile pensée pour les tournages.<br>
       Une présence discrète mais essentielle, là où les histoires se fabriquent.<br><br>
       La précision du geste, le goût juste, l’harmonie subtile.<br>
       C’est notre façon de participer au film.<br>
